@@ -8,6 +8,7 @@ all .zip packages contain:
 - Google Chrome WebDriver (chromedriver.exe v2.35 for Windows, can use any other version for any other OS) 
 - few txt documents. 
 
-BOT_Chrome.zip --> basic bot
-BOT_Chrome_Scrolling.zip --> added "manual" mousewheel scrolling in case the basic bot does not scroll on pages automatically
-BOT_Chrome_Aspects.zip --> helps you level or reorganize your wanted aspects
+differences:
+* BOT_Chrome.zip --> basic bot
+* BOT_Chrome_Scrolling.zip --> added "manual" mousewheel scrolling in case the basic bot does not scroll on pages automatically
+* BOT_Chrome_Aspects.zip --> helps you level or reorganize your wanted aspects
