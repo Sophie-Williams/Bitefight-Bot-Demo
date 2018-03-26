@@ -11,6 +11,6 @@ I did not bother with creating GUI interface, and therefore all settings are sim
 * few txt documents. 
 
 ## differences:
-* BOT_Chrome.zip --> basic bot
-* BOT_Chrome_Scrolling.zip --> added "manual" mousewheel scrolling in case the basic bot does not scroll on pages automatically
-* BOT_Chrome_Aspects.zip --> helps you level or reorganize your wanted aspects
+* BOT_Chrome.zip --> basic story bot
+* BOT_Chrome_Scrolling.zip --> added "manual" mousewheel scrolling in case the basic story bot does not scroll on pages automatically
+* BOT_Chrome_Aspects.zip --> helps you level or reorganize your wanted aspects as fast as possible
