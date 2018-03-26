@@ -1,5 +1,5 @@
 # Bitefight-Bot-Demo
-An automated remote control program (so-called bot) for a popular browser game Bitefight, written in Java combined with Selenium library for automating tests. So far, only story mode and leveling aspects are supported. 
+An automated remote control program (so-called bot) for a popular browser game Bitefight, written in Java combined with Selenium library for automating tests. So far, only story mode and managing aspects are supported. 
 
 Unlike other bots that act as browser plugins to control your character, this bot opens new Google Chrome instance and it clicks through game just like a legit user, and users can actually see what's going on in game.
 
