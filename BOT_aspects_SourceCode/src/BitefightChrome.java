@@ -92,7 +92,7 @@ public class BitefightChrome {
 				}
 			}
 			
-			/** continue only if:
+			/** CONTINUE ONLY IF:
 			/*    there is enough AP and 
 			/*    gold amount is below @stopGold threshold and
 			/*    Hero's HP is above @stopHP threshold and
@@ -218,11 +218,11 @@ public class BitefightChrome {
 			driver.findElement(By.cssSelector(".cc-compliance")).click();
 		}
 		pause(500,800);
-		driver.findElement(By.xpath("/html/body/div[5]/div[2]/div/div[2]/div/div/table/tbody/tr/td[2]/form/table/tbody/tr[1]/td[2]/input")).sendKeys(username);
+		driver.findElement(By.cssSelector("#loginForm > table > tbody > tr:nth-child(1) > td:nth-child(2) > input")).sendKeys(username);
 		pause(300,500);
-		driver.findElement(By.xpath("/html/body/div[5]/div[2]/div/div[2]/div/div/table/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/input")).sendKeys(password);
+		driver.findElement(By.cssSelector("#loginForm > table > tbody > tr:nth-child(2) > td:nth-child(2) > input")).sendKeys(password);
 		pause(300,500);
-		driver.findElement(By.xpath("/html/body/div[5]/div[2]/div/div[2]/div/div/table/tbody/tr/td[2]/form/table/tbody/tr[5]/td[2]/input")).click();
+		driver.findElement(By.cssSelector("#loginForm > table > tbody > tr:nth-child(5) > td:nth-child(2) > input")).click();
 	}
 
 	/** RETRIEVE HERO INFO
@@ -244,6 +244,7 @@ public class BitefightChrome {
 					currentAspects[a++] = Integer.parseInt(items[i+2].replace(" ", "").replace("<br/>", "").replace("<br />", ""));
 				}
 			}
+		
 		}
 		
 		// parse Hero's status (gold, AP, HP) if required
@@ -467,12 +468,13 @@ public class BitefightChrome {
 									// click
 									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
 									// recalculate aspect values
-									if (currentAspects[0] >= 10) {
-										currentAspects[0] -= 10;
-										currentAspects[3] += 2;
-										currentAspects[4] += 6;
-										currentAspects[5] += 2;
-									} else if (currentAspects[0] >= 5) {
+									if (currentAspects[0] >= 5) {
+										currentAspects[0] -= 5;
+										currentAspects[3] += 1;
+										currentAspects[4] += 3;
+										currentAspects[5] += 1;
+									}
+									if (currentAspects[0] >= 5) {
 										currentAspects[0] -= 5;
 										currentAspects[3] += 1;
 										currentAspects[4] += 3;
@@ -569,12 +571,13 @@ public class BitefightChrome {
 								// click
 								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
 								// recalculate aspect values
-								if (currentAspects[2] >= 10) {
-									currentAspects[2] -= 10;
-									currentAspects[5] += 2;
-									currentAspects[6] += 6;
-									currentAspects[7] += 2;
-								} else if (currentAspects[2] >= 5) {
+								if (currentAspects[2] >= 5) {
+									currentAspects[2] -= 5;
+									currentAspects[5] += 1;
+									currentAspects[6] += 3;
+									currentAspects[7] += 1;
+								}
+								if (currentAspects[2] >= 5) {
 									currentAspects[2] -= 5;
 									currentAspects[5] += 1;
 									currentAspects[6] += 3;
@@ -645,12 +648,13 @@ public class BitefightChrome {
 									// click
 									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
 									// recalculate aspect values
-									if (currentAspects[3] >= 10) {
-										currentAspects[3] -= 10;
-										currentAspects[6] += 2;
-										currentAspects[7] += 6;
-										currentAspects[0] += 2;
-									} else if (currentAspects[3] >= 5) {
+									if (currentAspects[3] >= 5) {
+										currentAspects[3] -= 5;
+										currentAspects[6] += 1;
+										currentAspects[7] += 3;
+										currentAspects[0] += 1;
+									}
+									if (currentAspects[3] >= 5) {
 										currentAspects[3] -= 5;
 										currentAspects[6] += 1;
 										currentAspects[7] += 3;
@@ -722,12 +726,13 @@ public class BitefightChrome {
 									// click
 									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
 									// recalculate aspect values
-									if (currentAspects[4] >= 10) {
-										currentAspects[4] -= 10;
-										currentAspects[7] += 2;
-										currentAspects[0] += 6;
-										currentAspects[1] += 2;
-									} else if (currentAspects[4] >= 5) {
+									if (currentAspects[4] >= 5) {
+										currentAspects[4] -= 5;
+										currentAspects[7] += 1;
+										currentAspects[0] += 3;
+										currentAspects[1] += 1;
+									}
+									if (currentAspects[4] >= 5) {
 										currentAspects[4] -= 5;
 										currentAspects[7] += 1;
 										currentAspects[0] += 3;
@@ -773,12 +778,13 @@ public class BitefightChrome {
 								// click
 								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
 								// recalculate aspect values
-								if (currentAspects[5] >= 10) {
-									currentAspects[5] -= 10;
-									currentAspects[0] += 2;
-									currentAspects[1] += 6;
-									currentAspects[2] += 2;
-								} else if (currentAspects[5] >= 5) {
+								if (currentAspects[5] >= 5) {
+									currentAspects[5] -= 5;
+									currentAspects[0] += 1;
+									currentAspects[1] += 3;
+									currentAspects[2] += 1;
+								}
+								if (currentAspects[5] >= 5) {
 									currentAspects[5] -= 5;
 									currentAspects[0] += 1;
 									currentAspects[1] += 3;
@@ -823,12 +829,13 @@ public class BitefightChrome {
 								// click
 								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
 								// recalculate aspect values
-								if (currentAspects[6] >= 10) {
-									currentAspects[6] -= 10;
-									currentAspects[1] += 2;
-									currentAspects[2] += 6;
-									currentAspects[3] += 2;
-								} else if (currentAspects[6] >= 5) {
+								if (currentAspects[6] >= 5) {
+									currentAspects[6] -= 5;
+									currentAspects[1] += 1;
+									currentAspects[2] += 3;
+									currentAspects[3] += 1;
+								}
+								if (currentAspects[6] >= 5) {
 									currentAspects[6] -= 5;
 									currentAspects[1] += 1;
 									currentAspects[2] += 3;
@@ -846,7 +853,7 @@ public class BitefightChrome {
 					else if (sortIndex[i] == 7  && (currentAspects[7] - desiredAspects[7]) >= 15) {
 						
 						for (int j = 0; j < b; j++) {
-							if (actions[j] == 29  && (currentAspects[0] - desiredAspects[0]) >= 15) {
+							if (actions[j] == 29 && (currentAspects[0] - desiredAspects[0]) >= 15) {
 								// pause
 								pause(responseTime[0], responseTime[1]);
 								// click
@@ -963,11 +970,11 @@ public class BitefightChrome {
 							// story action was selected
 							selected = true;
 							// recalculate aspects
-							if (currentAspects[3] >= 5) {
-								currentAspects[3] -= 5;
-								currentAspects[6] += 1;
-								currentAspects[7] += 3;
-								currentAspects[0] += 1;
+							if (currentAspects[7] >= 5) {
+								currentAspects[7] -= 5;
+								currentAspects[2] += 1;
+								currentAspects[3] += 3;
+								currentAspects[4] += 1;
 							}
 							break;
 						}
@@ -1022,12 +1029,13 @@ public class BitefightChrome {
 										currentAspects[1] += 1;
 									}
 								} else if (storyActions[i] == 43 || storyActions[i] == 32) {
-									if (currentAspects[4] >= 10) {
-										currentAspects[4] -= 10;
-										currentAspects[7] += 2;
-										currentAspects[0] += 6;
-										currentAspects[1] += 2;
-									} else if (currentAspects[4] >= 5) {
+									if (currentAspects[4] >= 5) {
+										currentAspects[4] -= 5;
+										currentAspects[7] += 1;
+										currentAspects[0] += 3;
+										currentAspects[1] += 1;
+									} 
+									if (currentAspects[4] >= 5) {
 										currentAspects[4] -= 5;
 										currentAspects[7] += 1;
 										currentAspects[0] += 3;
@@ -1054,24 +1062,26 @@ public class BitefightChrome {
 										currentAspects[2] += 1;
 									}
 								} else if (storyActions[i] == 39 || storyActions[i] == 53) {
-									if (currentAspects[5] >= 10) {
-										currentAspects[5] -= 10;
-										currentAspects[0] += 2;
-										currentAspects[1] += 6;
-										currentAspects[2] += 2;
-									} else if (currentAspects[5] >= 5) {
+									if (currentAspects[5] >= 5) {
+										currentAspects[5] -= 5;
+										currentAspects[0] += 1;
+										currentAspects[1] += 3;
+										currentAspects[2] += 1;
+									} 
+									if (currentAspects[5] >= 5) {
 										currentAspects[5] -= 5;
 										currentAspects[0] += 1;
 										currentAspects[1] += 3;
 										currentAspects[2] += 1;
 									}
 								} else if (storyActions[i] == 20 || storyActions[i] == 37 || storyActions[i] == 27) {
-									if (currentAspects[6] >= 10) {
-										currentAspects[6] -= 10;
-										currentAspects[1] += 2;
-										currentAspects[2] += 6;
-										currentAspects[3] += 2;
-									} else if (currentAspects[6] >= 5) {
+									if (currentAspects[6] >= 5) {
+										currentAspects[6] -= 5;
+										currentAspects[1] += 1;
+										currentAspects[2] += 3;
+										currentAspects[3] += 1;
+									} 
+									if (currentAspects[6] >= 5) {
 										currentAspects[6] -= 5;
 										currentAspects[1] += 1;
 										currentAspects[2] += 3;
@@ -1105,12 +1115,13 @@ public class BitefightChrome {
 										currentAspects[5] += 1;
 									}
 								} else if (storyActions[i] == 11 || storyActions[i] == 5) {
-									if (currentAspects[0] >= 10) {
-										currentAspects[0] -= 10;
-										currentAspects[3] += 2;
-										currentAspects[4] += 6;
-										currentAspects[5] += 2;
-									} else if (currentAspects[0] >= 5) {
+									if (currentAspects[0] >= 5) {
+										currentAspects[0] -= 5;
+										currentAspects[3] += 1;
+										currentAspects[4] += 3;
+										currentAspects[5] += 1;
+									} 
+									if (currentAspects[0] >= 5) {
 										currentAspects[0] -= 5;
 										currentAspects[3] += 1;
 										currentAspects[4] += 3;
@@ -1144,12 +1155,13 @@ public class BitefightChrome {
 										currentAspects[7] += 1;
 									}
 								} else if (storyActions[i] == 26) {
-									if (currentAspects[2] >= 10) {
-										currentAspects[2] -= 10;
-										currentAspects[5] += 2;
-										currentAspects[6] += 6;
-										currentAspects[7] += 2;
-									} else if (currentAspects[2] >= 5) {
+									if (currentAspects[2] >= 5) {
+										currentAspects[2] -= 5;
+										currentAspects[5] += 1;
+										currentAspects[6] += 3;
+										currentAspects[7] += 1;
+									} 
+									if (currentAspects[2] >= 5) {
 										currentAspects[2] -= 5;
 										currentAspects[5] += 1;
 										currentAspects[6] += 3;
@@ -1163,11 +1175,17 @@ public class BitefightChrome {
 										currentAspects[0] += 1;
 									}
 								} else if (storyActions[i] == 31) {
-									if (currentAspects[2] >= 10) {
-										currentAspects[2] -= 10;
-										currentAspects[5] += 2;
-										currentAspects[6] += 6;
-										currentAspects[7] += 2;
+									if (currentAspects[3] >= 5) {
+										currentAspects[3] -= 5;
+										currentAspects[6] += 1;
+										currentAspects[7] += 3;
+										currentAspects[0] += 1;
+									}
+									if (currentAspects[3] >= 5) {
+										currentAspects[3] -= 5;
+										currentAspects[6] += 1;
+										currentAspects[7] += 3;
+										currentAspects[0] += 1;
 									}
 								}
 								
@@ -1178,7 +1196,7 @@ public class BitefightChrome {
 				}
 				
 			}
-				
+			
 			// read configuration file and set user configuration
 			readConfig();
 			if (mode == "pause") {
@@ -1186,7 +1204,7 @@ public class BitefightChrome {
 				break;
 			}
 				
-			// check for exceptional popup "Mission accomplishment"
+			// check for exceptional pop-up "Mission accomplishment"
 			text = driver.getPageSource();
 			items = text.split("[\r\n]+");
 			for (int k = 800; k < items.length; k++) {
@@ -1251,7 +1269,7 @@ public class BitefightChrome {
 					driver.findElement(By.xpath("/html/body/div[4]/div[1]/ul/li[6]/a")).click();
 				}
 			}
-			
+
 		}
 		// reset variable when "while" loop conditions are not fulfilled
 		isInStory = false;
