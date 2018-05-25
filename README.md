@@ -1,3 +1,6 @@
+# NOTICE
+Please do not use bot for a while as users report that bot randomly chooses story actions.
+
 # Bitefight-Bot-Demo
 An automated remote control program (so-called bot) for a popular browser game Bitefight, written in Java combined with Selenium library for automating tests. Only story mode and managing aspects are supported, tested it on x4 speedservers 202 and 23. 
 
