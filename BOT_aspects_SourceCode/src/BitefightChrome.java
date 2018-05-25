@@ -390,8 +390,8 @@ public class BitefightChrome {
 			int b = 0; // counter of fetched action indexes (max = 4)
 			for (int i = 900; i < items.length && b < 4; i++) {
 				if (items[i].contains("/city/adventure/decision/")) {
-					int index = items[i].indexOf("/city/adventure/decision/")+24;
-					items[i] = items[i].substring(index, index+4).replaceAll("[^0-9]", "");
+					int index = items[i].indexOf("/city/adventure/decision/")+23;
+					items[i] = items[i].substring(index, index+6).replaceAll("[^0-9]", "");
 					actions[b++] = Integer.parseInt(items[i]);
 					click = true;
 				}
@@ -413,7 +413,7 @@ public class BitefightChrome {
 								// pause
 								pause(responseTime[0], responseTime[1]);
 								// click
-								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+								driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 								// recalculate aspect values
 								if (currentAspects[0] >= 5) {
 									currentAspects[0] -= 5;
@@ -439,7 +439,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[0] >= 5) {
 										currentAspects[0] -= 5;
@@ -466,7 +466,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[0] >= 5) {
 										currentAspects[0] -= 5;
@@ -493,7 +493,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[0] >= 5) {
 										currentAspects[0] -= 5;
@@ -518,7 +518,7 @@ public class BitefightChrome {
 								// pause
 								pause(responseTime[0], responseTime[1]);
 								// click
-								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+								driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 								// recalculate aspect values
 								if (currentAspects[1] >= 5) {
 									currentAspects[1] -= 5;
@@ -544,7 +544,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[1] >= 5) {
 										currentAspects[1] -= 5;
@@ -569,7 +569,7 @@ public class BitefightChrome {
 								// pause
 								pause(responseTime[0], responseTime[1]);
 								// click
-								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+								driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 								// recalculate aspect values
 								if (currentAspects[2] >= 5) {
 									currentAspects[2] -= 5;
@@ -595,7 +595,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[2] >= 5) {
 										currentAspects[2] -= 5;
@@ -620,7 +620,7 @@ public class BitefightChrome {
 								// pause
 								pause(responseTime[0], responseTime[1]);
 								// click
-								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+								driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 								// recalculate aspect values
 								if (currentAspects[3] >= 5) {
 									currentAspects[3] -= 5;
@@ -646,7 +646,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[3] >= 5) {
 										currentAspects[3] -= 5;
@@ -673,7 +673,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[3] >= 5) {
 										currentAspects[3] -= 5;
@@ -698,7 +698,7 @@ public class BitefightChrome {
 								// pause
 								pause(responseTime[0], responseTime[1]);
 								// click
-								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+								driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 								// recalculate aspect values
 								if (currentAspects[4] >= 5) {
 									currentAspects[4] -= 5;
@@ -724,7 +724,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[4] >= 5) {
 										currentAspects[4] -= 5;
@@ -751,7 +751,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[4] >= 5) {
 										currentAspects[4] -= 5;
@@ -776,7 +776,7 @@ public class BitefightChrome {
 								// pause
 								pause(responseTime[0], responseTime[1]);
 								// click
-								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+								driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 								// recalculate aspect values
 								if (currentAspects[5] >= 5) {
 									currentAspects[5] -= 5;
@@ -802,7 +802,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[5] >= 5) {
 										currentAspects[5] -= 5;
@@ -827,7 +827,7 @@ public class BitefightChrome {
 								// pause
 								pause(responseTime[0], responseTime[1]);
 								// click
-								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+								driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 								// recalculate aspect values
 								if (currentAspects[6] >= 5) {
 									currentAspects[6] -= 5;
@@ -857,7 +857,7 @@ public class BitefightChrome {
 								// pause
 								pause(responseTime[0], responseTime[1]);
 								// click
-								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+								driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 								// recalculate aspect values
 								if (currentAspects[0] >= 5) {
 									currentAspects[0] -= 5;
@@ -883,7 +883,7 @@ public class BitefightChrome {
 									// pause
 									pause(responseTime[0], responseTime[1]);
 									// click
-									driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+									driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 									// recalculate aspect values
 									if (currentAspects[7] >= 5) {
 										currentAspects[7] -= 5;
@@ -909,7 +909,7 @@ public class BitefightChrome {
 							// pause
 							pause(responseTime[0], responseTime[1]);
 							// click
-							driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+							driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 							// story action was selected
 							selected = true;
 							break;
@@ -923,7 +923,7 @@ public class BitefightChrome {
 							// pause
 							pause(responseTime[0], responseTime[1]);
 							// click
-							driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+							driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 							// story action was selected
 							selected = true;
 							break;
@@ -937,7 +937,7 @@ public class BitefightChrome {
 							// pause
 							pause(responseTime[0], responseTime[1]);
 							// click
-							driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+							driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 							// story action was selected
 							selected = true;
 							break;
@@ -951,7 +951,7 @@ public class BitefightChrome {
 							// pause
 							pause(responseTime[0], responseTime[1]);
 							// click
-							driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+							driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 							// story action was selected
 							selected = true;
 							break;
@@ -966,7 +966,7 @@ public class BitefightChrome {
 							// pause
 							pause(responseTime[0], responseTime[1]);
 							// click
-							driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+							driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 							// story action was selected
 							selected = true;
 							// recalculate aspects
@@ -987,7 +987,7 @@ public class BitefightChrome {
 							// pause
 							pause(responseTime[0], responseTime[1]);
 							// click
-							driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+							driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 							// story action was selected
 							selected = true;
 							break;
@@ -1001,7 +1001,7 @@ public class BitefightChrome {
 							// pause
 							pause(responseTime[0], responseTime[1]);
 							// click
-							driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+							driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 							// story action was selected
 							selected = true;
 							break;
@@ -1018,7 +1018,7 @@ public class BitefightChrome {
 								// pause
 								pause(responseTime[0], responseTime[1]);
 								// click
-								driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
+								driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
 								
 								// recalculate aspects
 								if (storyActions[i] == 10 || storyActions[i] == 4) {
