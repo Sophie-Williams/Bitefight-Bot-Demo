@@ -2,7 +2,7 @@
 Bitefight bot to automate the never-ending story mode, written in Java and combined with Selenium library for automating web tests. 
 It opens a new Google Chrome browser instance and it clicks through pages similar to a legit user.
 
-Ignore source code if you're not developer and you just want to use bot.
+Ignore source code if you're not developer and you only want to use bot.
 - Download 'bot_v1.03b.zip' package, 
 - extract content into any folder (recommended to extract package to a place where no administrator permissions are required, e.g. Desktop), 
 - and follow instructions given in 'instructions.txt' to setup and run bot.
