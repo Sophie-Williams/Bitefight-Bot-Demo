@@ -12,7 +12,8 @@ I did not bother with creating graphical user interface, and therefore all setti
 I removed 'bot_manual_scrolling' package since it's redundant to original bot package, and I also removed 'bot_aspects' package for leveling aspects, since it appears to do more harm than good. If you still hold a copy of bot_aspects package, abandon it.
 
 ## Current version:
-* 25.5.2018 --> v1.03b --> bot now detects EU cookies compliance message (introduced on 23.5.2018)
-                       --> fixed randomness (now bot follows user's order of story actions instead of randomly choosing actions)
-                       --> removed bot with additional mouse scrolling (it was redundant to original bot)
-                       --> removed bot for raising aspects as it seems to cause more harm than good
+25.5.2018 --> v1.03b 
+* bot now detects EU cookies compliance message (introduced on 23.5.2018)
+* fixed randomness (now bot follows user's order of story actions instead of randomly choosing actions)
+* removed bot with additional mouse scrolling (it was redundant to original bot)
+* removed bot for raising aspects as it seems to cause more harm than good (if you still have it, abandon it)
