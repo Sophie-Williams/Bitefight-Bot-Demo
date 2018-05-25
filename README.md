@@ -3,7 +3,7 @@ Bitefight bot to automate the never-ending story mode, written in Java and combi
 It opens a new Google Chrome browser instance and it clicks through pages similar to a legit user.
 
 Ignore source code if you're not developer and you only want to use bot.
-- Download 'bot_v1.03b.zip' package, 
+- Download 'bot_v1.04.zip' package, 
 - extract content into any folder (recommended to extract package to a place where no administrator permissions are required, e.g. Desktop), 
 - and follow instructions given in 'instructions.txt' to setup and run bot.
 
@@ -12,8 +12,8 @@ I did not bother with creating graphical user interface, and therefore all setti
 I removed 'bot_manual_scrolling' package since it's redundant to original bot package, and I also removed 'bot_aspects' package for leveling aspects, since it appears to do more harm than good. If you still hold a copy of bot_aspects package, abandon it.
 
 ## Current version:
-25.5.2018 --> v1.03b 
+25.5.2018 --> v1.04
 * bot now detects EU cookies compliance message (introduced on 23.5.2018)
-* fixed randomness (now bot follows user's order of story actions instead of randomly choosing actions)
+* fixed randomness (now bot follows user-defined story order instead of randomly choosing actions)
 * removed bot with additional mouse scrolling (it was redundant to original bot)
-* removed bot for raising aspects as it seems to cause more harm than good (if you still have it, abandon it)
+* removed bot for raising aspects as it seems to cause more harm than good (if you still have it, you should abandon it)
