@@ -1,3 +1,6 @@
+# NOTICE
+classic BOT now seems to be working as intended,
+but still not sure about aspect BOT
 # Bitefight-Bot-Demo
 An automated remote control program (so-called bot) for a popular browser game Bitefight, written in Java combined with Selenium library for automating tests. Only story mode and managing aspects are supported, tested it on x4 speedservers 202 and 23. 
 
@@ -18,3 +21,6 @@ I did not bother with creating GUI interface, and therefore all settings are sim
 ## differences:
 * BOT_classic.zip --> a basic story bot
 * BOT_Aspects.zip --> a modified version which uses its own logic to take on decisions to help you level or reorganize your wanted aspects at accelerated rate
+
+## Changes:
+* 25.5.2018 --> v1.03a --> bots now detect EU cookies compliance message
