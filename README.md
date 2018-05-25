@@ -1,6 +1,3 @@
-# NOTICE
-Please do not use bot for a while as users report that bot randomly chooses story actions.
-
 # Bitefight-Bot-Demo
 An automated remote control program (so-called bot) for a popular browser game Bitefight, written in Java combined with Selenium library for automating tests. Only story mode and managing aspects are supported, tested it on x4 speedservers 202 and 23. 
 
@@ -19,7 +16,5 @@ I did not bother with creating GUI interface, and therefore all settings are sim
 * few txt documents. 
 
 ## differences:
-* BOT.zip --> a basic story bot
-* BOT_Manual_Scroll.zip --> added "manual" mousewheel scrolling in case basic story bot (#BOT.zip) does not scroll on pages automatically 
-    (custom request for one of users who reported problem with scrolling in browser)
-* BOT_Aspects.zip --> a modified version of story bot which helps you level or reorganize your wanted aspects at accelerated rate
+* BOT_classic.zip --> a basic story bot
+* BOT_Aspects.zip --> a modified version which uses its own logic to take on decisions to help you level or reorganize your wanted aspects at accelerated rate
