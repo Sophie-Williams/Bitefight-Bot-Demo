@@ -16,4 +16,4 @@ I removed 'bot_manual_scrolling' package since it's redundant to original bot pa
 * bot now detects EU cookies compliance message (introduced on 23.5.2018)
 * fixed randomness (now bot follows user-defined story order instead of randomly choosing actions)
 * removed bot with additional mouse scrolling (it was redundant to original bot)
-* removed bot for raising aspects as it seems to cause more harm than good (if you still have it, you should abandon it)
+* removed bot for raising aspects as it seems to cause more harm than good (if you still have it, abandon it)
