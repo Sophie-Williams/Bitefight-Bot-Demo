@@ -1,26 +1,18 @@
-# NOTICE
-classic BOT now seems to be working as intended,
-but still not sure about aspect BOT
 # Bitefight-Bot-Demo
-An automated remote control program (so-called bot) for a popular browser game Bitefight, written in Java combined with Selenium library for automating tests. Only story mode and managing aspects are supported, tested it on x4 speedservers 202 and 23. 
+Bitefight bot to automate the never-ending story mode, written in Java and combined with Selenium library for automating web tests. 
+It opens a new Google Chrome browser instance and it clicks through pages similar to a legit user.
 
-Unlike other bots which are programmed as browser plugins to control your Bitefight Hero and introduce their own interface and logs, this bot opens a new Google Chrome instance and it clicks through game similar to a legit user, and users can actually see what's happening inside game.
-
-Ignore source code if you're not developer and you just want to bot. In this case, you only have to:
-- Download one of .zip packages, 
+Ignore source code if you're not developer and you just want to use bot.
+- Download 'bot_v1.03b.zip' package, 
 - extract content into any folder (recommended to extract package to a place where no administrator permissions are required, e.g. Desktop), 
-- and follow instructions given in provided #instructions.txt to setup and run bot.
+- and follow instructions given in 'instructions.txt' to setup and run bot.
 
-I did not bother with creating GUI interface, and therefore all settings are simply changed in #config.txt with text editor (e.g. wordpad, notepad). Setting up this bot might appear a bit advanced at first glance, but it's not really all that complicated. Plus, it's free to use and modify my spaghetti code. 
+I did not bother with creating graphical user interface, and therefore all settings are simply changed in 'config.txt' with text editor (e.g. wordpad, notepad). Setting up bot might appear a bit advanced at first glance, but it's not really all that complicated. Plus, it's free to use it and modify my spaghetti code.
 
-## All .zip packages contain:
-* Java executable bot program, need Java from https://java.com/en/download/,
-* Google Chrome WebDriver (included chromedriver.exe v2.38 for Windows, can use any other version for any other OS from https://sites.google.com/a/chromium.org/chromedriver/),
-* few txt documents. 
+I removed 'bot_manual_scrolling' package since it's redundant to original bot package, and I also removed 'bot_aspects' package for leveling aspects, since it appears to do more harm than good. If you still hold a copy of bot_aspects package, abandon it.
 
-## differences:
-* BOT_classic.zip --> a basic story bot
-* BOT_Aspects.zip --> a modified version which uses its own logic to take on decisions to help you level or reorganize your wanted aspects at accelerated rate
-
-## Changes:
-* 25.5.2018 --> v1.03a --> bots now detect EU cookies compliance message
+## Current version:
+* 25.5.2018 --> v1.03b --> bot now detects EU cookies compliance message (introduced on 23.5.2018)
+                       --> fixed randomness (now bot follows user's order of story actions instead of randomly choosing actions)
+                       --> removed bot with additional mouse scrolling (it was redundant to original bot)
+                       --> removed bot for raising aspects as it seems to cause more harm than good
