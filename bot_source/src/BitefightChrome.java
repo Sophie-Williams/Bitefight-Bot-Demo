@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BitefightChrome {
 
-	/** USER INPUTS are set in 'config.txt'
+	/** USER INPUTS are set in #config.txt
 	 * @username -- account login name
 	 * @password -- account login password
 	 * @serverURL -- Bitefight server URL
@@ -121,7 +121,7 @@ public class BitefightChrome {
 		
 	}
 
-	/** READ USER CONFIGURATION IN 'config.txt' */
+	/** READ USER CONFIGURATION IN #config.txt */
 	private static void readConfig() {
 		BufferedReader reader = null;
 		int lineCount = 0;
@@ -364,7 +364,7 @@ public class BitefightChrome {
 							// pause
 							pause(responseTime[0], responseTime[1]);
 							// click
-							driver.get(serverURL + "/city/adventure/decision/" + actions[j]);
+							driver.findElement(By.cssSelector("#content > div.wrap-left.clearfix > div > div > div:nth-child(" + (4+j) + ") > div > a")).click();
 							break loopAction;
 						}
 					}
