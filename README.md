@@ -5,7 +5,7 @@ It opens a new Google Chrome browser instance and it clicks through pages simila
 ## Download and setup
 Ignore source code if you're not developer and you only want to use bot.
 - Download 'bot_v1.05.zip' package, 
-- extract content into any folder (recommended to extract package to a place where no administrator permissions are required, e.g. Desktop), 
+- extract its content into any folder (recommended to extract package to a place where administrator permissions are not required, e.g. Desktop), 
 - and follow instructions given in 'instructions.txt' to setup and run bot.
 
 Removed aspect-related bot since it apparently started doing more harm than good. If you have trouble with it, abandon it and use normal bot instead.
