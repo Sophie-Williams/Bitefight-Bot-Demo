@@ -13,7 +13,7 @@ Removed aspect-related bot since it apparently started doing more harm than good
 ## Additional protection for paranoids
 There are rumours that selenium+chromedriver can be detected by certain websites, and folks seem to have found a workaround to it:
 - Download and install hex editor, e.g. HxD (https://mh-nexus.de/en/hxd/),
-- choose 'chromedriver.exe' for editing,
+- open hex editor and choose 'chromedriver.exe' for editing,
 - search for string '$cdc', or even better, '$cdc_asdjflasutopfhvcZLmcfl', and replace it with random letters.
 
 ## Current version:
