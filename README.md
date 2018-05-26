@@ -19,4 +19,4 @@ There are rumours that selenium+chromedriver can be detected by certain websites
 ## Current version:
 25.5.2018 --> v1.05
 * bot now detects EU cookies compliance message (introduced on 23.5.2018)
-* fixed randomness (now bot follows user-defined story order instead of randomly choosing actions)
+* fixed sudden randomness (now bot follows user-defined story order instead of randomly choosing actions)
