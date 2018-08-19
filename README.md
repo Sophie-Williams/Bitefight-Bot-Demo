@@ -7,12 +7,6 @@ It opens a new Google Chrome browser instance and it clicks through pages simila
 - extract its content into any folder (recommended to extract package to a place where administrator permissions are NOT required, e.g. Desktop), 
 - and follow instructions given in 'instructions.txt' to setup and run bot.
 
-## Additional protection for paranoids
-There are rumours that selenium+chromedriver can be detected by certain websites, and folks seem to have found a workaround to it:
-- Download and install hex editor, e.g. HxD (https://mh-nexus.de/en/hxd/),
-- open hex editor and choose 'chromedriver.exe' for editing,
-- search for string '$cdc', or even better, '$cdc_asdjflasutopfhvcZLmcfl', and replace it with random letters.
-
 ## Current version:
 19.8.2018 --> v1.06
 * updated bot and resources (ChromeDriver 2.41, Selenium 3.14.0)
