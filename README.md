@@ -3,7 +3,7 @@ A free-to-use program to automate the never-ending story mode in Bitefight, writ
 It opens a new Google Chrome browser instance and it clicks through pages similar to a legit user.
 
 ## Download and setup
-- download 'bot_v1.06.zip' package, 
+- download 'bot_v1.06.rar' package, 
 - extract its content into any folder (recommended to extract package to a place where administrator permissions are NOT required, e.g. Desktop), 
 - and follow instructions given in 'instructions.txt' to setup and run bot.
 
