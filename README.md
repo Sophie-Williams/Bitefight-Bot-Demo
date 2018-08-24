@@ -5,7 +5,7 @@ It opens a new Google Chrome browser instance and it clicks through pages simila
 ## Dependencies
 You need:
 - Google Chrome, can get it from here: https://www.google.com/chrome/,
-- Java 8, can get it from here: https://java.com/en/download/,
+- Java 8, can check your current version with command 'java -version' in cmd (Windows) and terminal (Linux), can get it from here: https://java.com/en/download/,
 - chromedriver is included in .zip package, can get its latest version from here: https://sites.google.com/a/chromium.org/chromedriver/
 
 ## Setup and run 
