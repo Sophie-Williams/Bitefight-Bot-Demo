@@ -9,7 +9,7 @@ You need:
 - chromedriver is included in .zip package, can get its latest version from here: https://sites.google.com/a/chromium.org/chromedriver/
 
 ## Setup and run 
-- download 'bot_v1.07_win.zip' package (for Windows), 
+- download 'bot_v1.07.zip' package ('win' for Windows OS, 'linux' for Linux OS), 
 - extract its content into a folder
 - run 'bot.jar', check 'instructions.txt' for instructions
   
