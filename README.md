@@ -9,7 +9,7 @@ You need:
 - chromedriver is included in .zip package, can get it from here: https://sites.google.com/a/chromium.org/chromedriver/
 
 ## Setup and run 
-- download 'bot_v1.07_win.zip' package, 
+- download 'bot_v1.07_win.zip' package (for Windows), 
 - extract its content into a folder
 - follow instructions given in 'instructions.txt' file.
 
