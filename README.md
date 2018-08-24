@@ -12,8 +12,9 @@ You need:
 - download 'bot_v1.07_win.zip' package (for Windows), 
 - extract its content into a folder
 - run 'bot.jar', check 'instructions.txt' for instructions
-  *Windows: double-click bot.jar
-  *Linux: via console, 'java -jar bot.jar'
+  
+  * WINDOWS: double-click bot.jar
+  * LINUX: open terminal and use command 'java -jar bot.jar'
 
 
 ## Current version:
