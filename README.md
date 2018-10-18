@@ -19,8 +19,8 @@ You need:
 
 ## Current version:
 19.10.2018 --> v1.08
-* added option to select former (expired) servers from dropdown menu at login page,
-** need volunteers to test it and report as I have no experience with accounts on expired servers
+* added option to select former (expired) servers from dropdown menu at login page
+* need volunteers to test it and report as I have no experience with accounts on expired servers
 
 24.8.2018 --> v1.07a
 * fixed user interface layouts
