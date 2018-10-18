@@ -9,15 +9,19 @@ You need:
 - chromedriver is already included in .zip package, but can get its latest version from here: https://sites.google.com/a/chromium.org/chromedriver/
 
 ## Setup and run 
-- download 'bot_v1.07a.zip' package ('win' => Windows OS / 'linux' => Linux OS / 'mac' => Mac OS), 
+- download 'bot_v1.08.zip' package (win = Windows OS / linux = Linux OS / mac = Mac OS), 
 - extract its content into a folder
 - run 'bot.jar', check 'instructions.txt' for detailed instructions
   
   * WINDOWS: double-click 'bot.jar'
-  * LINUX: open terminal, navigate to extracted folder and run command 'java -jar bot.jar'
+  * LINUX: open terminal, navigate to extracted folder, run commands 'chmod +x chromedriver' and then 'java -jar bot.jar'
   * MAC: double-click 'bot.jar', then confirm security exception via Apple icon -> System Preferences ... -> Security and Privacy
 
 ## Current version:
+19.10.2018 --> v1.08
+* added option to select former (expired) servers from dropdown menu at login page
+  need volunteers to test it and report as I have no experience with accounts on expired servers
+
 24.8.2018 --> v1.07a
 * fixed user interface layouts
 * now also available for MacOS
