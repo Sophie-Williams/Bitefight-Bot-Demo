@@ -25,6 +25,7 @@ You can edit a certain string in 'chromedriver' file with a hex editor, but make
 - search for string cdc (or even better) cdc_asdjflasutopfhvcZLmcfl_,
 - replace it with the equal amount of random letters,
 - save file
+
 If you have trouble with saving changes to 'chromedriver' file, close 'chromedriver' process (e.g. with Task Manager in Windows).
 
 ## Current version:
