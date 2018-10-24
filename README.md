@@ -10,12 +10,22 @@ You need:
 
 ## Setup and run 
 - download 'bot_v1.08.zip' package (win = Windows OS / linux = Linux OS / mac = Mac OS), 
-- extract its content into a folder
-- run 'bot.jar', check 'instructions.txt' for detailed instructions
+- extract its content into a folder,
+- run 'bot.jar', 
+- check 'instructions.txt' for detailed instructions
   
   * WINDOWS: double-click 'bot.jar'
   * LINUX: open terminal, navigate to extracted folder, run commands 'chmod +x chromedriver' and then 'java -jar bot.jar'
   * MAC: double-click 'bot.jar', then confirm security exception via Apple icon -> System Preferences ... -> Security and Privacy
+
+## Additional steps for less detection
+You can edit a certain string in 'chromedriver' file with a hex editor, but make a backup copy of it just in case.
+- download, install, run hex editor (e.g. https://mh-nexus.de/en/hxd/),
+- open 'chromedriver' file, 
+- search for string cdc (or even better) cdc_asdjflasutopfhvcZLmcfl_,
+- replace it with the equal amount of random letters,
+- save file
+If you have trouble with saving changes to 'chromedriver' file, close 'chromedriver' process (e.g. with Task Manager in Windows).
 
 ## Current version:
 19.10.2018 --> v1.08
