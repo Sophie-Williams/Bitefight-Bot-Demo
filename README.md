@@ -4,12 +4,12 @@ It opens a new Google Chrome browser instance and it clicks through pages simila
 
 ## Dependencies
 You need:
-- Google Chrome, can get it from here: https://www.google.com/chrome/,
+- Google Chrome (v70-v73 needed), can get it from here: https://www.google.com/chrome/,
 - Java 8, can get it from here: https://java.com/en/download/,
-- chromedriver is already included in .zip package, but can get its latest version from here: https://sites.google.com/a/chromium.org/chromedriver/
+- chromedriver v2.4.5 is included in .zip package, but can get its latest version from here: https://sites.google.com/a/chromium.org/chromedriver/
 
 ## Setup and run 
-- download 'bot_v1.08.zip' package (win = Windows OS / linux = Linux OS / mac = Mac OS), 
+- download 'bot109.zip' package (either for Windows or Linux), 
 - extract its content into a folder,
 - run 'bot.jar', 
 - check 'instructions.txt' for detailed instructions
@@ -29,21 +29,4 @@ You can edit a certain string in 'chromedriver' file with a hex editor, but make
 If you have trouble with saving changes to 'chromedriver' file, close 'chromedriver' process first if it is running (e.g. with Task Manager in Windows OS).
 
 ## Current version:
-19.10.2018 --> v1.08
-* added option to select former (expired) servers from dropdown menu at login page
-* need volunteers to test it and report as I have no experience with accounts on expired servers
-
-24.8.2018 --> v1.07a
-* fixed user interface layouts
-* now also available for MacOS
-
-24.8.2018 --> v1.07
-* improved bot and added user interface
-* now also available for linux OS
-
-19.8.2018 --> v1.06
-* updated bot and resources (ChromeDriver 2.41, Selenium 3.14.0)
-
-25.5.2018 --> v1.05
-* bot now detects EU cookies compliance message (introduced on 23.5.2018)
-* fixed sudden randomness (now bot follows user-defined story order instead of randomly choosing actions)
+v1.09 (30.01.2019)
