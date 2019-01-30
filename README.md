@@ -5,8 +5,8 @@ It opens a new Google Chrome browser instance and it clicks through pages simila
 ## Dependencies
 You need:
 - Google Chrome (v70-v72 needed), can get it from here: https://www.google.com/chrome/,
-- Java 8, can get it from here: https://java.com/en/download/,
-- chromedriver v2.4.5 is included in .zip package, but can get its other versions from here: https://sites.google.com/a/chromium.org/chromedriver/
+- chromedriver v2.4.5 is included in .zip package, but can get its other versions from here: https://sites.google.com/a/chromium.org/chromedriver/,
+- Java 8, can get it from here: https://java.com/en/download/
 
 ## Setup and run 
 - download 'bot109.zip' package (either for Windows or Linux), 
