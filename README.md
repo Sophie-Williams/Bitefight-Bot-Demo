@@ -1,6 +1,5 @@
 # Bitefight-Bot-Demo
-A free-to-use program to automate the never-ending story mode in Bitefight, written in Java and combined with Selenium library for automating web tests.
-It opens a new Google Chrome browser instance and it clicks through pages similar to a legit user.
+A free-to-use program to automate the never-ending story mode in Bitefight, written in Java and combined with Selenium library for automating web tests. It opens a new Google Chrome browser instance and it clicks through pages similar to a legit user. Demo preview at https://youtu.be/SDad1_7WW8w
 
 ## Dependencies
 You need:
