@@ -1,0 +1,25 @@
+Copyright 2018-2019 Rok Meden
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+This software includes third party open source software components, 
+which have their own licenses: 
+- for Selenium Java libraries in folder SOURCE/lib 
+(byte-buddy-1.8.15.jar, client-combined-3.141.59-sources.jar, 
+client-combined-3.141.59.jar, commons-exec-1.3.jar, guava-25.0-jre.jar, 
+okhttp-3.11.0.jar, okio-1.14.0.jar), which are available at 
+https://www.seleniumhq.org/download/, please see NOTICE-Selenium
+and LICENSE-Selenium (APACHE 2.0 License).
+- for chromedriver in folder SOURCE, which is available at
+https://sites.google.com/a/chromium.org/chromedriver/downloads, 
+please see LICENSE-chromedriver (the 3-clause BSD license).
