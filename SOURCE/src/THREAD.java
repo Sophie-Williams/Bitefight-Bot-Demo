@@ -1037,14 +1037,19 @@ public class THREAD extends Thread {
 			// recalculate aspects (to avoid frequent refresh of Hero aspects)
 			calc.recalculate(aspects, chosen);
 
-			// notify user about the number of required steps, but only when summary
-			// of wanted aspects is above 0 and below 8000 (otherwise infinite loop occurs)
+			// notify user about the number of required steps, but only if Hero still has
+			// not reached wanted aspects and wanted aspects are within limits
 			int sum = 0;
+			boolean calcSteps = false;
+			
 			for (int i = 0; i < 8; i++) {
 				sum += aspectsGoals[i];
+				if (aspects[i] - aspectsGoals[i] < 0) {
+					calcSteps = true;
+				}
 			}
 
-			if (sum > 0 && sum <= 8000) {
+			if (sum > 0 && sum <= 8000 && calcSteps) {
 				int steps = calc.numSteps(aspects.clone(), aspectsGoals);
 				setTextArea(steps + " steps required to reach your wanted aspects.");
 			} else if (sum < 0) {
