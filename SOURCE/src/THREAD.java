@@ -148,8 +148,10 @@ public class THREAD extends Thread {
 			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 			ChromeOptions options = new ChromeOptions().addArguments("--start-maximized");
 			return new ChromeDriver(options);
-		} catch (WebDriverException e) { // error if browser was manually closed
-			infoBox("Cannot control browser tab. \n\n" + "You must have manually closed browser or browser tab.", "ERROR");
+		} catch (WebDriverException e) { // error if version mismatch or if browser was manually closed
+			infoBox("Cannot control browser tab. \n\n" + 
+					"Either your current Google Chrome and chromedriver have a version mismatch or \n"
+				  + "you manually closed browser or browser tab.", "ERROR");
 			return null;
 		} catch (Exception e) { // error if ChromeDriver executable is missing
 			infoBox("Cannot launch ChromeDriver. \n\n" + "Do you have Chrome Browser installed on your conputer \n"
