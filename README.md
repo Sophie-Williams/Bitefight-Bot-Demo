@@ -32,7 +32,8 @@ If you have trouble with saving changes to 'chromedriver' file, <br>
 close or kill 'chromedriver' process with task manager and retry saving.
 
 ## Licensing
-This software is licensed under Apache 2.0 license, but it also includes third party open source software components, <br>
+This software is licensed under Apache 2.0 license, <br>
+but it also includes third party open source software components, <br>
 which have their own licenses. Please see LICENSE/license for more details.
 
 ## Current versions:
