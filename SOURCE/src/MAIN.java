@@ -666,22 +666,22 @@ public class MAIN {
 		panelStory.add(badActions);
 
 		btnStart = new JButton("Start");
-		btnStart.setBounds(410, 25, 100, 25);
+		btnStart.setBounds(415, 25, 100, 25);
 		btnStart.setEnabled(true);
 		frame.getContentPane().add(btnStart);
 
 		btnRun = new JButton("Run");
-		btnRun.setBounds(410, 55, 100, 25);
+		btnRun.setBounds(415, 55, 100, 25);
 		btnRun.setEnabled(false);
 		frame.getContentPane().add(btnRun);
 
 		btnPause = new JButton("Pause");
-		btnPause.setBounds(410, 85, 100, 25);
+		btnPause.setBounds(415, 85, 100, 25);
 		btnPause.setEnabled(false);
 		frame.getContentPane().add(btnPause);
 
 		btnStop = new JButton("Stop");
-		btnStop.setBounds(410, 115, 100, 25);
+		btnStop.setBounds(415, 115, 100, 25);
 		btnStop.setEnabled(false);
 		frame.getContentPane().add(btnStop);
 
@@ -691,27 +691,27 @@ public class MAIN {
 		panelStory.add(btnCheck);
 
 		JButton btnImport = new JButton("Import settings");
-		btnImport.setBounds(390, 175, 140, 25);
+		btnImport.setBounds(395, 175, 140, 25);
 		btnImport.setToolTipText("Import settings from custom configuration file.");
 		frame.getContentPane().add(btnImport);
 
 		JButton btnExport = new JButton("Export settings");
-		btnExport.setBounds(390, 205, 140, 25);
+		btnExport.setBounds(395, 205, 140, 25);
 		btnExport.setToolTipText("Export settings into custom configuration file.");
 		frame.getContentPane().add(btnExport);
 
 		JButton btnSave = new JButton("Save settings");
-		btnSave.setBounds(390, 265, 140, 25);
+		btnSave.setBounds(395, 265, 140, 25);
 		btnSave.setToolTipText("Save your current changes.");
 		frame.getContentPane().add(btnSave);
 
 		JButton btnReload = new JButton("Reload settings");
-		btnReload.setBounds(390, 295, 140, 25);
+		btnReload.setBounds(395, 295, 140, 25);
 		btnReload.setToolTipText("Discard your unsaved changes.");
 		frame.getContentPane().add(btnReload);
 
 		JButton btnDefault = new JButton("Default settings");
-		btnDefault.setBounds(390, 325, 140, 25);
+		btnDefault.setBounds(395, 325, 140, 25);
 		btnDefault.setToolTipText("Reset settings to default.");
 		frame.getContentPane().add(btnDefault);
 
