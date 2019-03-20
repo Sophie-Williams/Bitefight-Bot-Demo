@@ -1129,7 +1129,8 @@ public class THREAD extends Thread {
 				pause(minDelay, maxDelay);
 			} catch (WebDriverException e) { // error if cannot select TAVERN link
 				infoBox("Cannot select TAVERN link. \n"
-						+ "Make sure you are not occupied (hiding, working, in clan wars, etc.)", "ERROR");
+						+ "Make sure you are not occupied \n"
+						+ "(e.g. hiding, working, participating in clan wars)", "ERROR");
 				navigateError = true;
 				return false;
 			}
