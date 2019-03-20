@@ -54,9 +54,9 @@ public class THREAD extends Thread {
 	private int[][] story2actions = new int[10][60]; // aspects order
 
 	// navigation-related variables
-	private boolean canUseHuntShortcut = false; // allow [HUNT -> STORY] instead of [CITY -> TAVERN -> STORY]
-												// navigation?
+	private boolean canUseHuntShortcut = false; // allow [HUNT -> STORY] instead of [CITY -> TAVERN -> STORY] // navigation?
 	private boolean returnToStory = false; // allow [STORY -> purchase attributes -> STORY] navigation?
+	private boolean navigateError = false;
 
 	// cssSelectors
 	private String cookiesClick = "#accept_btn";
@@ -220,8 +220,8 @@ public class THREAD extends Thread {
 			return false;
 		}
 
-		// stop thread if requested
-		if (isAppMode(MODE.STOP)) {
+		// stop thread if requested or if navigation error occurs
+		if (isAppMode(MODE.STOP) || navigateError) {
 			return false;
 		}
 
@@ -235,8 +235,8 @@ public class THREAD extends Thread {
 				return false;
 			}
 
-			// stop thread if requested
-			if (isAppMode(MODE.STOP)) {
+			// stop thread if requested or if navigation error occurs
+			if (isAppMode(MODE.STOP) || navigateError) {
 				return false;
 			}
 
@@ -260,8 +260,8 @@ public class THREAD extends Thread {
 			return false;
 		}
 
-		// exit if mode is changed from RUN to anything else
-		if (!isAppMode(MODE.RUN)) {
+		// exit if mode is changed from RUN to anything else or if navigation error occurs
+		if (!isAppMode(MODE.RUN) || navigateError) {
 			return false;
 		}
 
@@ -791,6 +791,7 @@ public class THREAD extends Thread {
 
 		// navigate to story
 		if (!canProceed(driver) || !didNavigateStory(driver)) {
+			navigateError = true;
 			return;
 		}
 
@@ -802,6 +803,7 @@ public class THREAD extends Thread {
 			if (loops >= 40) {
 				// retrieve Hero status and navigate back to story
 				if (!canProceed(driver) || !isHeroStatus(driver, true, true, true) || !didNavigateStory(driver)) {
+					navigateError = true;
 					break storyLoop;
 				}
 				// reset loops counter
@@ -857,7 +859,10 @@ public class THREAD extends Thread {
 
 			if (returnToStory) {
 				returnToStory = false;
-				didNavigateStory(driver);
+				if (!didNavigateStory(driver)) {
+					navigateError = true;
+					return;
+				}
 			}
 		}
 		// when story loop is interrupted, disable HUNT shortcut and return to OVERVIEW
@@ -1123,7 +1128,9 @@ public class THREAD extends Thread {
 				driver.findElement(By.cssSelector(tavernClick)).click();
 				pause(minDelay, maxDelay);
 			} catch (WebDriverException e) { // error if cannot select TAVERN link
-				infoBox("Cannot select TAVERN link.", "ERROR");
+				infoBox("Cannot select TAVERN link. \n"
+						+ "Make sure you are not occupied (hiding, working, in clan wars, etc.)", "ERROR");
+				navigateError = true;
 				return false;
 			}
 
@@ -1132,6 +1139,7 @@ public class THREAD extends Thread {
 				canUseHuntShortcut = true; // set flag for entering story
 			} catch (WebDriverException e) { // error if cannot select START STORY button
 				infoBox("Cannot select START STORY button.", "ERROR");
+				navigateError = true;
 				return false;
 			}
 		}
