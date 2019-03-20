@@ -1,5 +1,5 @@
 # Bitefight-Bot-Demo
-A free-to-use program automates Bitefight browser game story. Written in Java, combined with Selenium libraries for automating web tests. Program launches a Google Chrome browser instance navigates through pages similar to a legit user. Demo preview at https://youtu.be/SDad1_7WW8w
+A free-to-use program automates Bitefight browser game story. Written in Java, combined with Selenium libraries for automating web tests. Program launches a Google Chrome browser instance navigates through pages similar to a legit user. Demo preview at https://youtu.be/lTHZOEu7wuM
 
 ## Dependencies
 You need:
