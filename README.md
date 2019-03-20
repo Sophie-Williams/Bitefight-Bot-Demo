@@ -42,5 +42,6 @@ v1.10 (20.03.2019) <br>
 - expanded to two story modes: custom priority order (original) and leveling wanted aspects (new), <br>
 - ability to check for missing story actions, <br>
 - more options with user settings <br>
+
 v1.09 (30.01.2019) <br>
 - older versions for all 3 major OS (Windows, Linux, Mac)
