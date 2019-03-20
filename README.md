@@ -38,9 +38,9 @@ which have their own licenses. Please see LICENSE/license for more details.
 
 ## Current versions:
 v1.10 (20.03.2019) <br>
-- added some robustness, plus warning and error notices,
-- expanded to 2 story modes: custom priority order (original) and leveling your wanted aspects (new)
-- ability to check for missing story actions
-- more options with user settings
-v1.09 (30.01.2019)
+- added warning and error notices, <br>
+- expanded to two story modes: custom priority order (original) and leveling wanted aspects (new), <br>
+- ability to check for missing story actions, <br>
+- more options with user settings <br>
+v1.09 (30.01.2019) <br>
 - older versions for all 3 major OS (Windows, Linux, Mac)
