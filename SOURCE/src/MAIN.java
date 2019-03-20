@@ -716,11 +716,11 @@ public class MAIN {
 		frame.getContentPane().add(btnDefault);
 
 		JSeparator separator4 = new JSeparator();
-		separator4.setBounds(376, 424, 164, 1);
+		separator4.setBounds(376, 424, 177, 1);
 		frame.getContentPane().add(separator4);
 
 		textArea = new JTextArea();
-		textArea.setBounds(0, 428, 540, 77);
+		textArea.setBounds(0, 428, 554, 89);
 		textArea.setEditable(false);
 		textArea.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		textArea.setLineWrap(true);
