@@ -3,9 +3,15 @@ A free-to-use program automates Bitefight browser game story. Written in Java, c
 
 ## Dependencies
 You need:
-- Google Chrome v73, can get latest version from https://www.google.com/chrome/,
-- chromedriver v73 is included in zip packages, can get latest version from https://sites.google.com/a/chromium.org/chromedriver/, <br>
+- Google Chrome, can get latest version from https://www.google.com/chrome/,
+- chromedriver is included in zip packages, can get latest version from https://sites.google.com/a/chromium.org/chromedriver/, <br>
 - Java 8, can get latest version from https://java.com/en/download/
+
+> !! IMPORTANT !! 
+> make sure you have a proper chromedriver version for 
+> your Google Chrome or you will get version mismatch error;
+> if, for example, your Google Chrome gets updated from v73 to v74,
+> simply get chromedriver v74 to match Google Chrome v74.
 
 ## Setup and run 
 - download release zip package, 
