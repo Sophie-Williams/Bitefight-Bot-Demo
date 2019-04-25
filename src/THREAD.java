@@ -576,7 +576,7 @@ public class THREAD extends Thread {
 				int a = 0;
 
 				for (int i = 1000; i < len && a < 5; i++) {
-					if (items[i].contains("<hr /></td></tr><tr><td>")) {
+					if (items[i].contains("<hr></td></tr><tr><td>")) {
 						int index = items[i].indexOf("</td><td align=\"right\">") + 22;
 						String temp = items[i].substring(index, index + 6).replaceAll("[^0-9]", "");
 
