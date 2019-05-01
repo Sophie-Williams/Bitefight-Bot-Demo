@@ -38,7 +38,7 @@ but it also includes third party open source software components, <br>
 which have their own licenses. Please see LICENSE/license for more details.
 
 ## Current versions:
-v1.10 (20.03.2019) <br>
+v1.10 (26.04.2019) for Google Chrome v74 <br>
 - added warning and error notices, <br>
 - expanded to two story modes: custom priority order (original) and leveling wanted aspects (new), <br>
 - ability to check for missing story actions, <br>
